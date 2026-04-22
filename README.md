@@ -1,1 +1,22 @@
 # CS-465-19072-M01-Full-Stack-Development-I-2026-C-2-Mar---Apr-
+README – Full Stack Web Application Reflection
+
+Architecture
+In this full stack project, I worked with two different approaches to frontend development: Express-rendered HTML using Handlebars (HBS) and a single-page application (SPA) built with Angular. The Express side was used for the customer-facing portion of the application, where pages were rendered on the server and sent to the browser as complete HTML views. This approach made it straightforward to organize content using MVC patterns and allowed dynamic data to be injected into templates. In contrast, the Angular SPA was used for the administrative side of the application. Instead of reloading entire pages, the SPA dynamically updated the user interface by communicating with backend APIs. This created a smoother and more interactive user experience, especially for performing CRUD operations.
+
+The backend used a NoSQL MongoDB database because it is flexible and works well with JSON-like data structures. Since the application handled data such as trips with varying fields, MongoDB allowed for easy storage and retrieval without requiring a rigid schema like a relational database. This flexibility also aligned well with JavaScript-based technologies used throughout the stack, making development more efficient and consistent across the application.
+
+Functionality
+JSON differs from JavaScript in that it is a data format rather than a programming language. While JavaScript is used to create logic and functionality, JSON is used to structure and transfer data between the frontend and backend. In this project, JSON acted as the connection point between the Angular SPA and the Express API. Data retrieved from MongoDB was formatted as JSON and sent through API endpoints, allowing the frontend to display and manipulate it dynamically.
+
+Throughout the full stack development process, I refactored code multiple times to improve functionality and efficiency. For example, I separated database logic into API routes rather than keeping it in the server-rendered application, which improved organization and scalability. I also created reusable UI components in Angular, such as trip listing and trip card components. These reusable components reduced code duplication, made updates easier to manage, and improved overall consistency in the user interface. The benefit of reusable components is that they promote cleaner code, faster development, and easier maintenance.
+
+Testing
+Testing in a full stack application involves verifying how different HTTP methods interact with API endpoints. Methods such as GET, POST, PUT, and DELETE were used to retrieve, create, update, and remove data from the database. Each endpoint had to be tested to ensure it returned the correct responses and handled errors properly. Tools like Postman were useful for manually testing API functionality before integrating it into the frontend.
+
+With the addition of security features, testing became more complex. Authentication introduced protected endpoints that required valid credentials or tokens before allowing access. This meant testing not only the functionality of endpoints but also ensuring that unauthorized users could not access restricted routes. Understanding how endpoints, methods, and security layers work together was essential in ensuring the application was both functional and secure.
+
+Reflection
+This course has played a significant role in helping me move closer to my professional goals by giving me hands-on experience building a complete full stack application. Before this course, I understood individual concepts like frontend development or databases separately, but this project helped me see how all parts of a system connect and work together. I gained experience in building APIs, integrating a database, developing both server-rendered and SPA frontends, and implementing authentication for security.
+
+I developed and strengthened several important skills, including problem-solving, debugging, and structuring applications using best practices like separation of concerns. I also improved my ability to refactor code and think about scalability and maintainability. These skills make me a more marketable candidate because they reflect real-world development practices. Overall, this course helped me transition from simply writing code to designing and building complete, functional, and secure applications.
